@@ -12,8 +12,8 @@ It is no means by perfect but should give someone and idea or starting point, fo
 The other reason is for me to play with Fabric, and get better at Python/PySpark, I said it is no means the right way of doing it. I have basicly tired to come up with very base idea and see where it goes.
 
 ## Releases
--  v0.5 - Intital release
--- dfs
+-  v0.1 - Intital release
+    - Basic notobooks to get file from a landing area to the Bronze-Raw Layer
 
 ## Roadmap
 ### Raw
@@ -27,3 +27,6 @@ Need to sort this out
 
 ### Gold
 Need to sort the out
+
+## Notes not the Medaillon layout
+I'll be using the Medaillon approuch to building the Data Lake in MS Fabric, using Bronze, Silver and Gold. However, However these will be further sub-divided by a schema.
