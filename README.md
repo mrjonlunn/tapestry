@@ -23,10 +23,10 @@ Add YAML file vailadtion
 Add Clean column names
 
 ### Sliver
-Need to sort this out
+This will be updated once I get to the Silver Layer and Bronze is complete
 
 ### Gold
-Need to sort the out
+This will be updated once I get to the Gold Layer and Silver is complete
 
 ## Notes not the Medaillon layout
 I'll be using the Medaillon approuch to building the Data Lake in MS Fabric, using Bronze, Silver and Gold. However, However these will be further sub-divided by a schema.
