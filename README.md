@@ -1,6 +1,9 @@
 # Tapestry
 An example of metadata driven spark notebooks, for loading data in Microsoft Fabric
 
+![image](https://github.com/mrjonlunn/tapestry/assets/36087739/0eec235d-b26b-4b6b-a139-6d9cecd11ff1)
+
+
 How to use Tapestry is now on the [Wiki](https://github.com/mrjonlunn/tapestry/wiki "Take me to the wiki")
 
 ## The why of Tapestry
