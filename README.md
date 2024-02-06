@@ -18,11 +18,11 @@ The other reason is for me to play with Fabric, and get better at Python/PySpark
 
 ## Roadmap
 ### Raw
-Move to YAML rather than use JSON, as you get cool things like multi-line supoort
-Add error handling
-Add YAML file vailadtion
-Add Clean column names
-Move to a WHL file to install on a cluster
+* Move to YAML rather than use JSON, as you get cool things like multi-line supoort
+* Add error handling
+* Add YAML file vailadtion
+* Add Clean column names
+* Move to a WHL file to install on a cluster
 
 ### Sliver
 This will be updated once I get to the Silver Layer and Bronze is complete
