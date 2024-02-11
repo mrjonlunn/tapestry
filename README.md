@@ -30,6 +30,6 @@ This will be updated once I get to the Silver Layer and Bronze is complete
 ### Gold
 This will be updated once I get to the Gold Layer and Silver is complete
 
-## Notes not the Medaillon layout
+## Notes on the Medaillon layout
 I'll be using the Medaillon approuch to building the Data Lake in MS Fabric, using Bronze, Silver and Gold. However, However these will be further sub-divided by a layer.
 I would check out the video by Simon Whiteley [Behind the Hype - The Medallion Architecture Doesn't Work](https://www.youtube.com/watch?v=fz4tax6nKZM "Take me to YouTube")
