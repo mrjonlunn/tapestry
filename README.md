@@ -19,6 +19,7 @@ The other reason is for me to play with Fabric, and get better at Python/PySpark
 ## Roadmap
 ### Raw
 * Move to YAML rather than use JSON, as you get cool things like multi-line supoort
+* Add schema vaildation and create variable direct from the file, not hardcode
 * Add error handling
 * Add YAML file vailadtion
 * Add Clean column names
