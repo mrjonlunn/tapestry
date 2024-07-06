@@ -1,0 +1,99 @@
+---
+config_version: 'v1_0'
+dataset:
+  source: testsource
+  entity: testentity
+file_type: csv
+file_options:
+  header: 'True'
+  delimiter: ","
+  multi_line: 'False'
+  escape: "\""
+  clean_column_names: 'False'
+  custom_schema:
+  - fieldName: vendorID
+    fieldType: StringType()
+    nullable: 'True'
+  - fieldName: tpepPickupDateTime
+    fieldType: TimestampType()
+    nullable: 'True'
+  - fieldName: tpepDropoffDateTime
+    fieldType: TimestampType()
+    nullable: 'True'
+  - fieldName: tripDistance
+    fieldType: DoubleType()
+    nullable: 'True'
+  - fieldName: puLocationId
+    fieldType: StringType()
+    nullable: 'True'
+  - fieldName: doLocationId
+    fieldType: StringType()
+    nullable: 'True'
+  - fieldName: startLon
+    fieldType: DoubleType()
+    nullable: 'True'
+  - fieldName: startLat
+    fieldType: DoubleType()
+    nullable: 'True'
+  - fieldName: endLon
+    fieldType: DoubleType()
+    nullable: 'True'
+  - fieldName: endLat
+    fieldType: DoubleType()
+    nullable: 'True'
+  - fieldName: rateCodeId
+    fieldType: IntegerType()
+    nullable: 'True'
+  - fieldName: storeAndFwdFlag
+    fieldType: StringType()
+    nullable: 'True'
+  - fieldName: paymentType
+    fieldType: StringType()
+    nullable: 'True'
+  - fieldName: fareAmount
+    fieldType: StringType()
+    nullable: 'True'
+  - fieldName: extra
+    fieldType: DoubleType()
+    nullable: 'True'
+  - fieldName: mtaTax
+    fieldType: DoubleType()
+    nullable: 'True'
+  - fieldName: improvementSurcharge
+    fieldType: StringType()
+    nullable: 'True'
+  - fieldName: tipAmount
+    fieldType: DoubleType()
+    nullable: 'True'
+  - fieldName: tollsAmount
+    fieldType: DoubleType()
+    nullable: 'True'
+  - fieldName: totalAmount
+    fieldType: DoubleType()
+    nullable: 'True'
+  - fieldName: puYear
+    fieldType: IntegerType()
+    nullable: 'True'
+  - fieldName: puMonth
+    fieldType: IntegerType()
+    nullable: 'True'
+table_options:
+  raw:
+    lakehouse_name: LH_FabricPoC
+    layer_name: raw
+    table_name: nyc_taxi
+    structure_only: 'False'
+    allow_schema_drift: 'True'
+    insert_type: overwrite
+    create_table_if_not_exists: 'True'
+    partition_type: date
+    partition_date_format: yyyy/mm/dd
+    dataframe_partition_columns: RowCreatedDate
+    table_partition_columns:
+    - PartitionYear
+    - PartitionMonth
+    - PartitionDay
+    partition_row_size: '1000000'
+    business_keys:
+    merge_on_columns:
+    merge_update_columns:
